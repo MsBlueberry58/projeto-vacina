@@ -1,0 +1,52 @@
+version: "3.8"
+services:
+    barramento:
+        build:
+            context: ./barramento_de_eventos
+        ports:
+            - "1000:1000"
+        env_file:
+            - .env
+    alerta:
+        build:
+            context: ./alerta_vacina
+        ports:
+            - "2000:2000"
+        env_file:
+            - .env
+    cadastro:
+        build:
+            context: ./cadastro
+        ports:
+            - "3000:3000"
+        env_file:
+            - .env
+    censo:
+        build:
+            context: ./censo
+        ports:
+            - "4000:4000"
+        env_file:
+            - .env
+    estoque:
+        build:
+            context: ./estoque
+        ports:
+            - "6000:6000"
+
+
+    mongo:
+        image: mongo
+        ports:
+            - 27017:27017
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=dockerservice
+            - MONGO_INITDB_ROOT_PASSWORD=dockerpw
+    mongo-express:
+        image: mongo-express
+        ports: 
+            - 8081:8081
+        environment:
+            - ME_CONFIG_MONGODB_ADMINUSERNAME=dockerservice
+            - ME_CONFIG_MONGODB_ADMINPASSWORD=dockerpw
+            - ME_CONFIG_MONGODB_SERVER=mongo

@@ -1,0 +1,41 @@
+[
+    {
+        "tipo": "UsuarioCadastrado",
+        "usuario": {
+            "id": 0,
+            "idade": 26,
+            "dados": {
+                "RG": "111111111",
+                "aniversario": "20/10/1994",
+                "nome": "Vitor",
+                "endereco": "Rua Alvorada, 896 - Sao Paulo, Vila Olimpia"
+            }
+        }
+    },
+    {
+        "tipo": "UsuarioCadastrado",
+        "usuario": {
+            "id": 1,
+            "idade": 26,
+            "dados": {
+                "RG": "222222222",
+                "aniversario": "20/10/1994",
+                "nome": "Vitor 2",
+                "endereco": "Rua Alvorada, 896 - Sao Paulo, Vila Olimpia"
+            }
+        }
+    },
+    {
+        "tipo": "UsuarioCadastrado",
+        "usuario": {
+            "id": 2,
+            "idade": 40,
+            "dados": {
+                "RG": "333333333",
+                "aniversario": "20/10/1980",
+                "nome": "Vitor 3",
+                "endereco": "Rua Alvorada, 896 - Sao Paulo, Vila Olimpia"
+            }
+        }
+    }
+]

@@ -1,0 +1,36 @@
+{
+    "dataCensoCriado": "2021-06-12T19:16:24.793Z",
+    "censo": {
+        "20": {
+            "usuarios": [
+                {
+                    "rg": "333333333",
+                    "nome": "Usuario 3",
+                    "dataNascimento": "01/02/2001",
+                    "endereco": "Rua Visconde de Cachoeira, 65 - Sao Paulo, Vila Nova Conceicao",
+                    "idade": 20
+                }
+            ],
+            "quantidade": 1
+        },
+        "26": {
+            "usuarios": [
+                {
+                    "rg": "111111111",
+                    "nome": "Usuario 1",
+                    "dataNascimento": "20/10/1994",
+                    "endereco": "Av Juriti, 508  - Sao Paulo, Moema",
+                    "idade": 26
+                },
+                {
+                    "rg": "222222222",
+                    "nome": "Usuario 2",
+                    "dataNascimento": "05/03/1995",
+                    "endereco": "Praca Maua, 1 - Sao Caetano, Maua",
+                    "idade": 26
+                }
+            ],
+            "quantidade": 2
+        }
+    }
+}

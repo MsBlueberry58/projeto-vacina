@@ -1,0 +1,5 @@
+docker build --rm -t [NOME] [CAMINHO]
+run -d --name [NOME] -p [PORTA]:[PORTA] --network [NETWORK] [NOME]
+
+docker-compose build
+docker-compose up
