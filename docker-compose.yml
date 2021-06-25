@@ -32,7 +32,7 @@ services:
         build:
             context: ./estoque
         ports:
-            - "6000:6000"
+            - "8082:80"
 
 
     mongo:

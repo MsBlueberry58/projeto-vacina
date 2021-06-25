@@ -19,9 +19,6 @@ app.post('/eventos', (req, res) => {
     // Envia o evento para o mss de cadastro
     axios.post(`http://${process.env.MSS_CADASTRO}:${process.env.PORT_CADASTRO}/eventos`, evento);
 
-    // Envia o evento para o mss de censo
-    axios.post(`http://${process.env.MSS_CENSO}:${process.env.PORT_CENSO}/eventos`, evento);
-
     res.status(200).send({msg: 'Deu tudo certo'});
 });
 
